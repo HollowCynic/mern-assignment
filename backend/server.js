@@ -9,8 +9,8 @@ require('dotenv').config();
 const app = express();
 const port = process.env.port || 5000;
 
-// const PUBLIC_PATH = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://mern-app-nateb.herokuapp.com/"
-const PUBLIC_PATH = "https://mern-app-nateb.herokuapp.com/"
+const PUBLIC_PATH = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://mern-app-nateb.herokuapp.com/"
+// const PUBLIC_PATH = "https://mern-app-nateb.herokuapp.com/"
 
 // setup cookies
 const ttl = 7200000
@@ -52,12 +52,11 @@ const usersRouter = require('./routes/users')
 app.use('/expenses', expensesRouter);
 app.use('/users', usersRouter);
 
-if(process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, "../build")))
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../ build/index.html'))
-    })
-}
+app.use(express.static(path.resolve(__dirname, "../build")))
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../ build/index.html'))
+})
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`) /*console.log not needed*/
