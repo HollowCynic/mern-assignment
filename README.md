@@ -15,6 +15,8 @@ user settings at the top of the navbar to change their username or password.
 
 ![image](https://user-images.githubusercontent.com/68364120/118609164-b6280780-b777-11eb-9b81-6334ba0f0269.png)
 
+![image](https://user-images.githubusercontent.com/68364120/118612253-d3120a00-b77a-11eb-9c1f-9f31d5c2c75b.png)
+
 ![image](https://user-images.githubusercontent.com/68364120/118609386-ea032d00-b777-11eb-8c56-540d6c98eed3.png)
 
 
