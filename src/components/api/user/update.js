@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const updateUser = (userID, updateInfo) => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch(`http://localhost:5000/users/update/${userID}`, {
+            await fetch(`${API_BASE}/users/update/${userID}`, {
                 method: "PATCH",
                 credentials: 'include',
                 headers: {

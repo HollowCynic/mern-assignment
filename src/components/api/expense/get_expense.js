@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const getUserExpenses = (userID) => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch(`http://localhost:5000/expenses/${userID}`, {
+            await fetch(`${API_BASE}/expenses/${userID}`, {
                 method: "GET",
                 credentials: 'include',
                 headers: {

@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const deleteExpense = (expenseID) => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch(`http://localhost:5000/expenses/${expenseID}`, {
+            await fetch(`${API_BASE}/expenses/${expenseID}`, {
                 method: "DELETE",
                 credentials: 'include',
                 headers: {

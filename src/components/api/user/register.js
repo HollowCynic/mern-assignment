@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const register = (registerInfo) => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch("http://localhost:5000/users/register", {
+            await fetch(`${API_BASE}/users/register`, {
                 method: "POST",
                 credentials: 'include',
                 headers: {

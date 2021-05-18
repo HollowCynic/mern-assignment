@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const login = (loginInfo) => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch("http://localhost:5000/users/login", {
+            await fetch(`${API_BASE}/users/login`, {
                 method: "POST",
                 credentials: 'include',
                 headers: {

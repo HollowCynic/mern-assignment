@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const logout = () => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch("http://localhost:5000/users/logout", {
+            await fetch(`${API_BASE}/users/logout`, {
                 method: "POST",
                 credentials: "include",
                 headers: {

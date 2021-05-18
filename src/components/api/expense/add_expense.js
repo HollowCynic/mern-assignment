@@ -1,7 +1,9 @@
+import { API_BASE } from '../utils/config'
+
 const addExpense = (newExpenseInfo) => {
     return new Promise(async (resolve, reject) => {
         try {
-            await fetch(`http://localhost:5000/expenses/add`, {
+            await fetch(`${API_BASE}/expenses/add`, {
                 method: "POST",
                 credentials: 'include',
                 headers: {
