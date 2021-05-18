@@ -51,7 +51,7 @@ const LoginPage = () =>{
                         <h2 className="textborder">Login to your account</h2>
                     </div>
 
-                    <div onSubmit={(e) => handleSubmit(e)} >
+                    <form onSubmit={(e) => handleSubmit(e)} >
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">
@@ -66,7 +66,7 @@ const LoginPage = () =>{
                         </div>
                         <br/>
                         <button onClick={(e) => handleSubmit(e)}>Submit</button>
-                    </div>
+                    </form>
                 </div>
             </div>
             </div>

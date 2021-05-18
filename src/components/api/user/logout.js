@@ -5,7 +5,7 @@ const logout = () => {
         try {
             await fetch(`${API_BASE}/users/logout`, {
                 method: "POST",
-                credentials: "include",
+                credentials: 'include',
                 headers: {
                     "Accept": "application/json",
                     "Content-Type": "application/json",

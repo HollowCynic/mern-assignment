@@ -9,8 +9,8 @@ require('dotenv').config();
 const app = express();
 const port = process.env.port || 5000;
 
-const PUBLIC_PATH = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://mern-app-nateb.herokuapp.com/"
-// const PUBLIC_PATH = "http://localhost:3000"
+// const PUBLIC_PATH = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://mern-app-nateb.herokuapp.com/"
+const PUBLIC_PATH = "https://mern-app-nateb.herokuapp.com/"
 
 // setup cookies
 const ttl = 7200000
