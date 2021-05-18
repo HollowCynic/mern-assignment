@@ -1,10 +1,25 @@
 .App {
   text-align: center;
+  height: "100vh";
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +50,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.overlay {
+  width: "100%";
+  height: "auto";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gradegrey {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pane {
+  height: 100%;
+  width: 50%;
+  padding: 15px;
+}
+
+.textborder {
+  text-shadow: 5px 5px 8px #000000;
+}
+
+.logoutButton {
+  color: white;
+  background: hsl(233, 96%, 39%);
+  padding: 0px;
+  margin-right: 18px;
+  border-radius: 4px;
+  height: 32px;
+  margin-top: 6px;
+  border: solid;
+  border-color: cyan;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-shadow: 2px 2px #000000;
+}
+
+.whiteshadow {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.hoverable:hover {
+  color: red;
+  border: red;
+}
+
+.hoverable2:hover {
+  color: white;
+  background: red;
 }
