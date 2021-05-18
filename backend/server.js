@@ -3,6 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const session = require("express-session")
 const cookieParser = require('cookie-parser')
+const path = require('path')
 
 require('dotenv').config();
 
